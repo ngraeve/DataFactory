@@ -57,7 +57,7 @@
 				"type": "DOUBLE"
 			},
 			{
-				"name": "Unit Cost",
+				"name": "UnitCost",
 				"type": "DOUBLE"
 			},
 			{
