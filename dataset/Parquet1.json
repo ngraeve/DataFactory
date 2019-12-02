@@ -10,65 +10,66 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureDataLakeStoreLocation",
+				"fileName": "CountrySales2011-output.parquet",
 				"folderPath": "Parquet"
 			},
 			"compressionCodec": "snappy"
 		},
 		"schema": [
 			{
-				"name": "Australia and Oceania",
+				"name": "Region",
 				"type": "UTF8"
 			},
 			{
-				"name": "Papua New Guinea",
+				"name": "Country",
 				"type": "UTF8"
 			},
 			{
-				"name": "Vegetables",
+				"name": "Item Type",
 				"type": "UTF8"
 			},
 			{
-				"name": "Offline",
+				"name": "Sales Channel",
 				"type": "UTF8"
 			},
 			{
-				"name": "H",
+				"name": "Order Priority",
 				"type": "UTF8"
 			},
 			{
-				"name": "09/06/2011",
+				"name": "Order Date",
 				"type": "UTF8"
 			},
 			{
-				"name": "229372489",
+				"name": "Order ID",
 				"type": "INT64"
 			},
 			{
-				"name": "10/18/2011",
+				"name": "Ship Date",
 				"type": "UTF8"
 			},
 			{
-				"name": "5272",
+				"name": "Units Sold",
 				"type": "INT64"
 			},
 			{
-				"name": "154.06",
+				"name": "Unit Price",
 				"type": "DOUBLE"
 			},
 			{
-				"name": "90.93",
+				"name": "Unit Cost",
 				"type": "DOUBLE"
 			},
 			{
-				"name": "812204.32",
+				"name": "Total Revenue",
 				"type": "DOUBLE"
 			},
 			{
-				"name": "479382.96",
+				"name": "Total Cost",
 				"type": "DOUBLE"
 			},
 			{
-				"name": "332821.36",
+				"name": "Total Profit",
 				"type": "DOUBLE"
 			}
 		]
