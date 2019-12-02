@@ -1,0 +1,76 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStore1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureDataLakeStoreLocation",
+				"folderPath": "Parquet"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "Australia and Oceania",
+				"type": "UTF8"
+			},
+			{
+				"name": "Papua New Guinea",
+				"type": "UTF8"
+			},
+			{
+				"name": "Vegetables",
+				"type": "UTF8"
+			},
+			{
+				"name": "Offline",
+				"type": "UTF8"
+			},
+			{
+				"name": "H",
+				"type": "UTF8"
+			},
+			{
+				"name": "09/06/2011",
+				"type": "UTF8"
+			},
+			{
+				"name": "229372489",
+				"type": "INT64"
+			},
+			{
+				"name": "10/18/2011",
+				"type": "UTF8"
+			},
+			{
+				"name": "5272",
+				"type": "INT64"
+			},
+			{
+				"name": "154.06",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "90.93",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "812204.32",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "479382.96",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "332821.36",
+				"type": "DOUBLE"
+			}
+		]
+	}
+}
