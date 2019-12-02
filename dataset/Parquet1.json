@@ -25,35 +25,35 @@
 				"type": "UTF8"
 			},
 			{
-				"name": "Item Type",
+				"name": "ItemType",
 				"type": "UTF8"
 			},
 			{
-				"name": "Sales Channel",
+				"name": "SalesChannel",
 				"type": "UTF8"
 			},
 			{
-				"name": "Order Priority",
+				"name": "OrderPriority",
 				"type": "UTF8"
 			},
 			{
-				"name": "Order Date",
+				"name": "OrderDate",
 				"type": "UTF8"
 			},
 			{
-				"name": "Order ID",
+				"name": "OrderID",
 				"type": "INT64"
 			},
 			{
-				"name": "Ship Date",
+				"name": "ShipDate",
 				"type": "UTF8"
 			},
 			{
-				"name": "Units Sold",
+				"name": "UnitsSold",
 				"type": "INT64"
 			},
 			{
-				"name": "Unit Price",
+				"name": "UnitPrice",
 				"type": "DOUBLE"
 			},
 			{
@@ -61,15 +61,15 @@
 				"type": "DOUBLE"
 			},
 			{
-				"name": "Total Revenue",
+				"name": "TotalRevenue",
 				"type": "DOUBLE"
 			},
 			{
-				"name": "Total Cost",
+				"name": "TotalCost",
 				"type": "DOUBLE"
 			},
 			{
-				"name": "Total Profit",
+				"name": "TotalProfit",
 				"type": "DOUBLE"
 			}
 		]
