@@ -1,0 +1,13 @@
+{
+	"name": "AzureDataLakeStore1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDataLakeStore",
+		"typeProperties": {
+			"dataLakeStoreUri": "https://querypocadls.azuredatalakestore.net/webhdfs/v1",
+			"tenant": "0432f8dc-ed65-40a2-b279-9b5e95cee650",
+			"subscriptionId": "27e21a97-2e33-467e-b2bd-ae3d749ae81c",
+			"resourceGroupName": "Data_Lake"
+		}
+	}
+}
