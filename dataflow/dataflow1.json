@@ -1,0 +1,24 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "Parquet1",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [],
+			"transformations": [
+				{
+					"name": "Filter1"
+				}
+			],
+			"script": "\n\nsource(output(\n\t\t{Australia and Oceania} as string,\n\t\t{Papua New Guinea} as string,\n\t\tVegetables as string,\n\t\tOffline as string,\n\t\tH as string,\n\t\t{09/06/2011} as string,\n\t\t{229372489} as long,\n\t\t{10/18/2011} as string,\n\t\t{5272} as long,\n\t\t{154.06} as double,\n\t\t{90.93} as double,\n\t\t{812204.32} as double,\n\t\t{479382.96} as double,\n\t\t{332821.36} as double\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tlimit: 100,\n\tformat: 'parquet') ~> source1\nsource1 filter(H=='H') ~> Filter1"
+		}
+	}
+}
