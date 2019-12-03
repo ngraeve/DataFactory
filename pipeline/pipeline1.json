@@ -48,8 +48,7 @@
 					},
 					"body": {
 						"dataFactoryName": "@{pipeline().DataFactory}",
-						"pipelineName": "@{pipeline().Pipeline}",
-						"receiver": "@pipeline().parameters.receiver"
+						"pipelineName": "@{pipeline().Pipeline}"
 					}
 				}
 			}
