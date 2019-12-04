@@ -275,7 +275,6 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureDataLakeStoreLocation",
-						"fileName": "CountrySales2011-output.parquet",
 						"folderPath": "Parquet"
 					},
 					"compressionCodec": "snappy"

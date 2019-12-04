@@ -1,0 +1,95 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "Data-Factory-PFG"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "[concat(parameters('factoryName'), '/Parquet1')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureDataLakeStore1",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "Parquet",
+				"typeProperties": {
+					"location": {
+						"type": "AzureDataLakeStoreLocation",
+						"folderPath": "Parquet"
+					},
+					"compressionCodec": "snappy"
+				},
+				"schema": [
+					{
+						"name": "Region",
+						"type": "UTF8"
+					},
+					{
+						"name": "Country",
+						"type": "UTF8"
+					},
+					{
+						"name": "ItemType",
+						"type": "UTF8"
+					},
+					{
+						"name": "SalesChannel",
+						"type": "UTF8"
+					},
+					{
+						"name": "OrderPriority",
+						"type": "UTF8"
+					},
+					{
+						"name": "OrderDate",
+						"type": "UTF8"
+					},
+					{
+						"name": "OrderID",
+						"type": "INT64"
+					},
+					{
+						"name": "ShipDate",
+						"type": "UTF8"
+					},
+					{
+						"name": "UnitsSold",
+						"type": "INT64"
+					},
+					{
+						"name": "UnitPrice",
+						"type": "DOUBLE"
+					},
+					{
+						"name": "UnitCost",
+						"type": "DOUBLE"
+					},
+					{
+						"name": "TotalRevenue",
+						"type": "DOUBLE"
+					},
+					{
+						"name": "TotalCost",
+						"type": "DOUBLE"
+					},
+					{
+						"name": "TotalProfit",
+						"type": "DOUBLE"
+					}
+				]
+			},
+			"dependsOn": []
+		}
+	]
+}
