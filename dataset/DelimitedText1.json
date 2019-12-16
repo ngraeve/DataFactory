@@ -19,45 +19,59 @@
 		},
 		"schema": [
 			{
+				"name": "Region",
 				"type": "String"
 			},
 			{
+				"name": "Country",
 				"type": "String"
 			},
 			{
+				"name": "ItemType",
 				"type": "String"
 			},
 			{
+				"name": "SalesChannel",
 				"type": "String"
 			},
 			{
+				"name": "OrderPriority",
 				"type": "String"
 			},
 			{
+				"name": "OrderDate",
 				"type": "String"
 			},
 			{
+				"name": "OrderID",
 				"type": "String"
 			},
 			{
+				"name": "ShipDate",
 				"type": "String"
 			},
 			{
+				"name": "UnitsSold",
 				"type": "String"
 			},
 			{
+				"name": "UnitPrice",
 				"type": "String"
 			},
 			{
+				"name": "UnitCost",
 				"type": "String"
 			},
 			{
+				"name": "TotalRevenue",
 				"type": "String"
 			},
 			{
+				"name": "TotalCost",
 				"type": "String"
 			},
 			{
+				"name": "TotalProfit",
 				"type": "String"
 			}
 		]
